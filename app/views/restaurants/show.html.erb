@@ -1,0 +1,10 @@
+Name: <%= @restaurant.name %>
+<br>
+Address: <%= @restaurant.address %>
+<br>
+Category: <%= @restaurant.category.capitalize %>
+<br>
+<br>
+<%= link_to "Leave a review", new_review_path %>
+<br>
+<%= link_to "Go back to restaurant list", restaurants_path %>
