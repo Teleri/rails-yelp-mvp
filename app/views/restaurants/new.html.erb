@@ -1,6 +1,14 @@
-<%= simple_form_for @restaurant do |r| %>
-  <%= r.input :name %>
-  <%= r.input :address %>
-  <%= r.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
-  <%= r.button :submit %>
-<% end %>
+<div class="container">
+ <div class="row">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <%= simple_form_for @restaurant do |r| %>
+      <%= r.input :name %>
+      <%= r.input :address %>
+      <%= r.input :phone_number %>
+      <%= r.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
+      <%= r.button :submit %>
+    <% end %>
+  </div>
+    <%= button_to :back %>
+  </div>
+</div>
